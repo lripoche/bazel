@@ -330,6 +330,7 @@ public final class CcCompilationContext implements CcCompilationContextApi<Artif
    * {@link com.google.devtools.build.lib.analysis.BlazeDirectories#getExecRoot(String)}).
    */
   public ImmutableList<PathFragment> getExternalIncludeDirs() {
+    System.out.println(commandLineCcCompilationContext.externalIncludeDirs);
     return commandLineCcCompilationContext.externalIncludeDirs;
   }
 
